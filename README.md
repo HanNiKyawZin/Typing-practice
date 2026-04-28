@@ -4,6 +4,12 @@ A fun and interactive typing game designed to help users improve their typing sp
 
 ---
 
+## 🌐 Live Demo
+
+👉 https://webdev-typing-practice.netlify.app/
+
+---
+
 ## 📝 Features
 
 - **Typing Practice with Web Dev Knowledge:** Practice typing using curated paragraphs about HTML, CSS, JavaScript, and modern web development best practices.
@@ -83,15 +89,3 @@ A fun and interactive typing game designed to help users improve their typing sp
 ---
 
 ## 📂 File Structure
-├── index.html       # Main HTML page
-├── style.css        # Styling for home and game screens
-└── script.js        # JavaScript game logic
-
-
-## ✨ Future Improvements
-
-- Add multiple difficulty levels.
-- Include sound effects for correct/incorrect typing.
-- Store high scores using localStorage.
-- Add user authentication for progress tracking.
-- Support mobile touch typing.
