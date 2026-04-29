@@ -1,103 +1,66 @@
-# Web Dev Typing Game
+# 🚀 Web Dev Typing Game
 
-A fun and interactive typing game designed to help users improve their typing speed while learning essential web development concepts.
+An interactive, browser-based typing application designed to enhance typing speed while reinforcing essential web development concepts. Built with a focus on real-time feedback and clean performance.
 
----
-
-## 🌐 Live Demo
-
-👉 https://webdev-typing-practice.netlify.app/
+[**🌐 Launch Live Demo**](https://webdev-typing-practice.netlify.app/)
 
 ---
 
-## 📝 Features
-
-- **Typing Practice with Web Dev Knowledge:** Practice typing using curated paragraphs about HTML, CSS, JavaScript, and modern web development best practices.
-- **Custom Timer:** Choose from multiple durations (30s, 1m, 2m, 3m) to challenge yourself.
-- **Real-time Feedback:** Highlights correct and incorrect characters as you type.
-- **Score Tracking:** Calculates Words Per Minute (WPM) and typing accuracy.
-- **Responsive UI:** Simple and modern design with dark mode styling.
-- **Restart & Back Options:** Restart the game or go back to the home screen anytime.
-
----
-
-## 💻 Technologies Used
-
-- **HTML5:** Structure and content of the game.
-- **CSS3:** Styling with custom dropdowns, typography, and responsive containers.
-- **JavaScript (Vanilla):** Game logic, timer, typing detection, and score calculation.
+## ✨ Key Features
+- **Educational Content:** Practice typing using curated snippets about HTML, CSS, JavaScript, and modern best practices.
+- **Dynamic Timer:** Customizable session durations (30s, 1m, 2m, 3m) to challenge users of all levels.
+- **Real-time Feedback:** Visual character highlighting (correct/incorrect) as you type for immediate accuracy tracking.
+- **Advanced Metrics:** Automatic calculation of WPM (Words Per Minute) and Accuracy % upon completion.
+- **Developer UI:** Modern dark theme with a monospace font for a professional coding aesthetic.
+- **Navigation Control:** Smooth transitions between game states with Restart and Home screen options.
 
 ---
 
-## 🚀 How to Run
-
-1. Clone or download the repository.
-2. Ensure you have the following files in the same directory:
-    - `index.html`
-    - `style.css`
-    - `script.js`
-3. Open `index.html` in a web browser.
-4. Select the desired timer and click **Start Game** to begin typing.
+## 🛠️ Technologies Used
+- **Frontend:** HTML5 (Semantic Structure)
+- **Styling:** CSS3 (Custom dropdowns, transitions, and responsive layout)
+- **Logic:** Vanilla JavaScript (ES6+ for game state, timer management, and scoring logic)
 
 ---
 
 ## 🎮 How to Play
+### 1. **Select Duration:** Choose your preferred timer from the home screen dropdown.
 
-1. On the home screen:
-   - Read the introduction and select your preferred duration from the dropdown.
-   - Click **Start Game**.
-2. On the game screen:
-   - Start typing the displayed paragraph.
-   - Correct letters are highlighted in white; incorrect letters are highlighted in red.
-   - Your WPM and accuracy will be calculated and displayed when time runs out.
-3. Use the **Restart** button to start a new game with the same timer.
-4. Use the **Back** button to return to the home screen and choose a new duration.
+### 2. **Type to Start:** The timer triggers automatically on your first keypress.
 
----
+### 3. **Analyze:** Check your white/red highlighting to track your accuracy in real-time.
 
-## ⚙️ Game Logic Overview
+### 4. **Evaluate:** View your final WPM and Accuracy score once the timer reaches zero.
 
-- **Paragraph Generation:** Randomly selects 2–3 web development-related sentences for each round.
-- **Typing Feedback:** 
-  - Correct characters are highlighted in white.
-  - Incorrect characters are highlighted in red.
-  - Untyped characters are dimmed.
-- **Timer Handling:** 
-  - Timer starts on the first key press.
-  - Game automatically stops when the timer reaches zero.
-  - Supports pause detection if no key is pressed for a short period.
-- **Scoring:** 
-  - WPM (Words Per Minute) is calculated as `correct characters ÷ 5 ÷ minutes`.
-  - Accuracy = `(correct characters ÷ total typed characters) × 100%`.
+## 🚀 Local Installation
+### 1. **Clone the repository:**
+   git clone https://github.com/HanNiKyawZin/Typing-practice.git
+
+### 2. **Navigate & Run:** Open index.html directly in your web browser or use a Live Server extension.
 
 ---
 
-## 🎨 Styling
+## ⚙️ Core Logic Overview
+- **Scoring Algorithm:** * WPM = (Correct Characters / 5) / Minutes
+- Accuracy = (Correct Characters / Total Typed) * 100
 
-- Dark theme with monospace font for a classic coding look.
-- Custom dropdowns for timer selection with smooth hover effects.
-- Highlighted text feedback for typed characters.
+- **Real-time DOM Manipulation:** Uses dynamic class toggling for character highlighting to ensure zero-latency feedback.
 
----
-
-## 🛠️ Customization
-
-- **Add More Paragraphs:** Extend the `paragraphs` array in `script.js` with additional web development content.
-- **Change Theme:** Update `style.css` to modify colors, fonts, and layout.
-- **Adjust Timer Options:** Modify the `.options` divs in `index.html` to add or remove time choices.
+- **Randomized Content:** Paragraphs are procedurally selected from a curated array in script.js.
 
 ---
 
-## 📂 File Structure
-├── index.html       # Main HTML page
-├── style.css        # Styling for home and game screens
-└── script.js        # JavaScript game logic
+## 📁 File Structure
+├── **index.html**       # Application entry point & UI structure
+├── **style.css**        # Responsive styling & dark theme definitions
+└── **script.js**        # Core game engine & scoring logic
 
+---
 
-## ✨ Future Improvements
+## 📜 License & Credits
+- **License:** MIT License. Free for educational and personal use.
+- **Source:** Developed as a practical demonstration of Vanilla JavaScript DOM manipulation.
 
-- Add multiple difficulty levels.
-- Include sound effects for correct/incorrect typing.
-- Store high scores using localStorage.
-- Add user authentication for progress tracking.
-- Support mobile touch typing.
+---
+
+- **Developer Note:** This project is part of my technical portfolio for internship applications, focusing on logic-driven JavaScript development.
